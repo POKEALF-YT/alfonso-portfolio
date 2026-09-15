@@ -255,9 +255,17 @@ import { Icon } from "astro-icon/components";
           <h2>Dashboard preview.</h2>
         </div>
 
-        <div class="placeholder">
-          <span>ANONYMIZED DASHBOARD</span>
-          <p>Screenshot will be added here.</p>
+        <div class="dashboard-frame">
+          <div class="dashboard-label">
+            <span>ANONYMIZED DASHBOARD</span>
+            <span>OPERATIONS INTELLIGENCE</span>
+          </div>
+
+          <img
+            src="/images/operations-dashboard.png"
+            alt="Anonymized operations intelligence dashboard"
+            loading="lazy"
+          />
         </div>
       </section>
 
@@ -652,25 +660,30 @@ import { Icon } from "astro-icon/components";
     padding: 120px 0 140px;
   }
 
-  .placeholder {
-    min-height: 620px;
+  .dashboard-frame {
     margin-top: 70px;
-    display: grid;
-    place-content: center;
-    text-align: center;
+    padding: 20px;
     background: #111111;
-    color: #F7F7F5;
+    border-radius: 4px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.12);
   }
 
-  .placeholder span {
-    font-size: 10px;
-    letter-spacing: 0.16em;
+  .dashboard-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 2px 18px;
+
+    font-size: 9px;
+    letter-spacing: 0.14em;
     color: #8A7F6A;
   }
 
-  .placeholder p {
-    margin: 12px 0 0;
-    color: #8c8b84;
+  .dashboard-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
   }
 
   .next {
@@ -765,8 +778,13 @@ import { Icon } from "astro-icon/components";
       padding-left: 0;
     }
 
-    .placeholder {
-      min-height: 420px;
+    .dashboard-frame {
+      padding: 12px;
+    }
+
+    .dashboard-label {
+      gap: 20px;
+      font-size: 8px;
     }
   }
 </style>
