@@ -1,13 +1,11 @@
 ---
-import { Icon } from "astro-icon/components";
-
 const projects = [
   {
     number: "01",
     title: "AI-Powered Operations Intelligence",
     description:
       "Centralized operational data into a decision-support system combining dashboards, business KPIs and AI-assisted analysis.",
-    stack: ["PostgreSQL", "Power BI", "Goose", "AI Agents"],
+    stack: ["SQL", "BI", "APIs", "AI Agents"],
     category: "Data & AI",
   },
   {
@@ -15,7 +13,7 @@ const projects = [
     title: "Demand Forecasting & Purchasing Automation",
     description:
       "Built forecasting and analytical workflows to support purchasing decisions, identify demand patterns and improve cost control.",
-    stack: ["Python", "Pandas", "NumPy", "Scikit-learn", "Machine Learning"],
+    stack: ["Python", "Machine Learning", "Forecasting", "Automation"],
     category: "Analytics",
   },
   {
@@ -31,7 +29,7 @@ const projects = [
     title: "Customer Journey Automation",
     description:
       "Automated payments, enrollment, collections and customer communications to reduce manual work and improve process consistency.",
-    stack: ["Stripe", "Power BI", "Python", "Process Automation"],
+    stack: ["Automation", "Payments", "BI", "Process Design"],
     category: "Business Transformation",
   },
 ];
@@ -167,40 +165,6 @@ const projects = [
                   {project.stack.map((skill) => <span>{skill}</span>)}
                 </div>
 
-                <div class="tech-icons">
-                  {project.number === "01" && (
-                    <>
-                      <Icon name="simple-icons:postgresql" />
-                      <Icon name="simple-icons:powerbi" />
-                    </>
-                  )}
-
-                  {project.number === "02" && (
-                    <>
-                      <Icon name="simple-icons:python" />
-                      <Icon name="simple-icons:pandas" />
-                      <Icon name="simple-icons:numpy" />
-                      <Icon name="simple-icons:scikitlearn" />
-                    </>
-                  )}
-
-                  {project.number === "03" && (
-                    <>
-                      <Icon name="simple-icons:powerapps" />
-                      <Icon name="simple-icons:powerautomate" />
-                      <Icon name="mdi:microsoft-sharepoint" />
-                    </>
-                  )}
-
-                  {project.number === "04" && (
-                    <>
-                      <Icon name="simple-icons:stripe" />
-                      <Icon name="simple-icons:powerbi" />
-                      <Icon name="simple-icons:python" />
-                    </>
-                  )}
-                </div>
-
                 <div class="project-link">View case study →</div>
               </article>
             ))
@@ -293,7 +257,7 @@ const projects = [
 
   :global(body) {
     margin: 0;
-    background: #F7F7F5;
+    background: #f3f2ee;
     color: #111;
     font-family:
       Inter,
@@ -383,7 +347,7 @@ const projects = [
   }
 
   .hero h1 span {
-    color: #8A7F6A;
+    color: #77766f;
   }
 
   .intro {
@@ -392,7 +356,7 @@ const projects = [
 
     font-size: clamp(18px, 1.5vw, 22px);
     line-height: 1.55;
-    color: #6B6B66;
+    color: #595954;
   }
 
   .hero-actions {
@@ -428,7 +392,7 @@ const projects = [
   }
 
   .secondary:hover {
-    background: #DCE1D6;
+    background: #e6e5df;
   }
 
   .hero-card {
@@ -471,7 +435,7 @@ const projects = [
     width: 7px;
     height: 7px;
 
-    background: #8A7F6A;
+    background: #9beb71;
     border-radius: 50%;
   }
 
@@ -580,7 +544,7 @@ const projects = [
     margin: 0;
 
     line-height: 1.7;
-    color: #6B6B66;
+    color: #60605a;
   }
 
   .project-grid {
@@ -610,7 +574,7 @@ const projects = [
 
   .project-card:hover {
     background: #111;
-    color: #F7F7F5;
+    color: #f3f2ee;
   }
 
   .project-header {
@@ -626,7 +590,7 @@ const projects = [
   }
 
   .category {
-    color: #6B6B66;
+    color: #77766f;
   }
 
   .project-content {
@@ -673,30 +637,6 @@ const projects = [
     font-size: 10px;
   }
 
-  .tech-icons {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 24px;
-  }
-
-  .tech-icons :global(svg) {
-    width: 22px;
-    height: 22px;
-    opacity: 0.65;
-    transition:
-      opacity 0.2s ease,
-      transform 0.2s ease;
-  }
-
-  .project-card:hover .tech-icons :global(svg) {
-    opacity: 0.9;
-  }
-
-  .tech-icons :global(svg):hover {
-    transform: translateY(-2px);
-  }
-
   .project-link {
     font-size: 13px;
   }
@@ -717,7 +657,7 @@ const projects = [
 
     font-size: 20px;
     line-height: 1.65;
-    color: #6B6B66;
+    color: #565650;
   }
 
   .capabilities {
@@ -737,7 +677,7 @@ const projects = [
 
   .capabilities span {
     font-size: 11px;
-    color: #6B6B66;
+    color: #77766f;
   }
 
   .capabilities strong {
@@ -759,7 +699,7 @@ const projects = [
   }
 
   .contact h2 span {
-    color: #6B6B66;
+    color: #77766f;
   }
 
   .contact-links {
@@ -785,7 +725,7 @@ const projects = [
     border-top: 1px solid #c6c5be;
 
     font-size: 11px;
-    color: #6B6B66;
+    color: #77766f;
   }
 
   @media (max-width: 900px) {
