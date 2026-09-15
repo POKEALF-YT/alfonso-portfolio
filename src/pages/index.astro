@@ -9,6 +9,7 @@ const projects = [
       "Centralized operational data into a decision-support system combining dashboards, business KPIs and AI-assisted analysis.",
     stack: ["PostgreSQL", "Power BI", "Goose", "AI Agents"],
     category: "Data & AI",
+    href: "/projects/ai-operations",
   },
   {
     number: "02",
@@ -17,6 +18,7 @@ const projects = [
       "Built forecasting and analytical workflows to support purchasing decisions, identify demand patterns and improve cost control.",
     stack: ["Python", "Pandas", "NumPy", "Scikit-learn", "Machine Learning"],
     category: "Analytics",
+    href: "/projects/demand-forecasting",
   },
   {
     number: "03",
@@ -25,6 +27,7 @@ const projects = [
       "Designed an internal workflow for incident tracking, prioritization and operational follow-up across multiple business locations.",
     stack: ["Power Apps", "Power Automate", "SharePoint"],
     category: "Automation",
+    href: "/projects/operations-management",
   },
   {
     number: "04",
@@ -33,6 +36,7 @@ const projects = [
       "Automated payments, enrollment, collections and customer communications to reduce manual work and improve process consistency.",
     stack: ["Stripe", "Power BI", "Python", "Process Automation"],
     category: "Business Transformation",
+    href: null,
   },
 ];
 ---
@@ -201,7 +205,17 @@ const projects = [
                   )}
                 </div>
 
-                <div class="project-link">View case study →</div>
+                {
+                  project.href ? (
+                    <a class="project-link" href={project.href}>
+                      View case study →
+                    </a>
+                  ) : (
+                    <span class="project-link summary">
+                      Project summary
+                    </span>
+                  )
+                }
               </article>
             ))
           }
@@ -698,7 +712,19 @@ const projects = [
   }
 
   .project-link {
+    width: fit-content;
     font-size: 13px;
+    color: inherit;
+    text-decoration: none;
+    text-underline-offset: 5px;
+  }
+
+  a.project-link:hover {
+    text-decoration: underline;
+  }
+
+  .project-link.summary {
+    opacity: 0.45;
   }
 
   .about {
