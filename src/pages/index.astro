@@ -1,17 +1,800 @@
 ---
-
+const projects = [
+  {
+    number: "01",
+    title: "AI-Powered Operations Intelligence",
+    description:
+      "Centralized operational data into a decision-support system combining dashboards, business KPIs and AI-assisted analysis.",
+    stack: ["SQL", "BI", "APIs", "AI Agents"],
+    category: "Data & AI",
+  },
+  {
+    number: "02",
+    title: "Demand Forecasting & Purchasing Automation",
+    description:
+      "Built forecasting and analytical workflows to support purchasing decisions, identify demand patterns and improve cost control.",
+    stack: ["Python", "Machine Learning", "Forecasting", "Automation"],
+    category: "Analytics",
+  },
+  {
+    number: "03",
+    title: "Operations Management System",
+    description:
+      "Designed an internal workflow for incident tracking, prioritization and operational follow-up across multiple business locations.",
+    stack: ["Power Apps", "Power Automate", "SharePoint"],
+    category: "Automation",
+  },
+  {
+    number: "04",
+    title: "Customer Journey Automation",
+    description:
+      "Automated payments, enrollment, collections and customer communications to reduce manual work and improve process consistency.",
+    stack: ["Automation", "Payments", "BI", "Process Design"],
+    category: "Business Transformation",
+  },
+];
 ---
 
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="Alfonso Palma — Business Transformation, Operations, Data & Automation."
+    />
+    <title>Alfonso Palma — Operations, Data & Automation</title>
+  </head>
+
+  <body>
+    <header class="navbar">
+      <a href="/" class="logo">AP.</a>
+
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a
+        class="linkedin"
+        href="https://www.linkedin.com/in/alfonso-palma-028184146/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn ↗
+      </a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Business Transformation · Data · Automation</p>
+
+          <h1>
+            I build systems that make
+            <span>businesses work better.</span>
+          </h1>
+
+          <p class="intro">
+            I connect operations, data and technology to transform complex
+            business problems into scalable processes, analytical systems and
+            automation solutions.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#work">View selected work</a>
+            <a class="button secondary" href="#contact">Let's connect</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="card-top">
+            <span>ALFONSO PALMA</span>
+            <span class="status">
+              <i></i>
+              Mexico City
+            </span>
+          </div>
+
+          <div class="card-main">
+            <p>FOCUS</p>
+
+            <h2>
+              Operations<br />
+              Data<br />
+              Automation
+            </h2>
+          </div>
+
+          <div class="card-bottom">
+            <div>
+              <span class="label">DATA</span>
+              <strong>Analytics & BI</strong>
+            </div>
+
+            <div>
+              <span class="label">SYSTEMS</span>
+              <strong>Automation</strong>
+            </div>
+
+            <div>
+              <span class="label">BUSINESS</span>
+              <strong>Transformation</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="statement">
+        <p>
+          From fragmented data and manual workflows to
+          <strong>decision-ready systems.</strong>
+        </p>
+      </section>
+
+      <section class="work" id="work">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2>Projects built around real business problems.</h2>
+          </div>
+
+          <p class="section-copy">
+            A selection of data, automation and operational transformation
+            projects focused on measurable business outcomes.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          {
+            projects.map((project) => (
+              <article class="project-card">
+                <div class="project-header">
+                  <span class="project-number">{project.number}</span>
+                  <span class="category">{project.category}</span>
+                </div>
+
+                <div class="project-content">
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+                </div>
+
+                <div class="stack">
+                  {project.stack.map((skill) => <span>{skill}</span>)}
+                </div>
+
+                <div class="project-link">View case study →</div>
+              </article>
+            ))
+          }
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>
+            Business first.<br />
+            Technology with purpose.
+          </h2>
+        </div>
+
+        <div class="about-copy">
+          <p>
+            I work at the intersection of operations, analytics and technology.
+            My focus is identifying where businesses lose time, money or
+            visibility — and designing systems that solve those problems.
+          </p>
+
+          <p>
+            My experience spans business intelligence, process automation,
+            operational management, financial analysis, forecasting and
+            technology implementation.
+          </p>
+
+          <div class="capabilities">
+            <div>
+              <span>01</span>
+              <strong>Business Intelligence</strong>
+            </div>
+            <div>
+              <span>02</span>
+              <strong>Process Automation</strong>
+            </div>
+            <div>
+              <span>03</span>
+              <strong>Operations Analytics</strong>
+            </div>
+            <div>
+              <span>04</span>
+              <strong>AI-Powered Systems</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <p class="eyebrow">Let's work together</p>
+
+        <h2>
+          Have a complex problem?<br />
+          <span>Let's make it simpler.</span>
+        </h2>
+
+        <div class="contact-links">
+          <a href="mailto:alfonso_mp1314@hotmail.com">
+            Email me ↗
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/alfonso-palma-028184146/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn ↗
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Alfonso Palma</span>
+      <span>Built with Astro.</span>
+    </footer>
+  </body>
 </html>
+
+<style>
+  :global(*) {
+    box-sizing: border-box;
+  }
+
+  :global(html) {
+    scroll-behavior: smooth;
+  }
+
+  :global(body) {
+    margin: 0;
+    background: #f3f2ee;
+    color: #111;
+    font-family:
+      Inter,
+      ui-sans-serif,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      sans-serif;
+  }
+
+  :global(a) {
+    color: inherit;
+  }
+
+  .navbar {
+    width: min(1400px, calc(100% - 64px));
+    margin: auto;
+    height: 92px;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+  }
+
+  .logo {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.06em;
+    text-decoration: none;
+  }
+
+  nav {
+    display: flex;
+    gap: 34px;
+  }
+
+  nav a,
+  .linkedin {
+    font-size: 14px;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+  }
+
+  nav a:hover,
+  .linkedin:hover {
+    opacity: 0.45;
+  }
+
+  .linkedin {
+    justify-self: end;
+  }
+
+  .hero {
+    width: min(1400px, calc(100% - 64px));
+    min-height: calc(100vh - 92px);
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    align-items: center;
+    gap: 80px;
+
+    padding: 80px 0;
+  }
+
+  .eyebrow {
+    margin: 0 0 30px;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #62625d;
+  }
+
+  .hero h1 {
+    max-width: 870px;
+    margin: 0;
+
+    font-size: clamp(58px, 7.5vw, 118px);
+    line-height: 0.91;
+    letter-spacing: -0.075em;
+    font-weight: 550;
+  }
+
+  .hero h1 span {
+    color: #77766f;
+  }
+
+  .intro {
+    max-width: 690px;
+    margin: 42px 0 0;
+
+    font-size: clamp(18px, 1.5vw, 22px);
+    line-height: 1.55;
+    color: #595954;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 42px;
+  }
+
+  .button {
+    padding: 15px 22px;
+
+    border-radius: 999px;
+
+    font-size: 14px;
+    text-decoration: none;
+
+    transition:
+      transform 0.2s ease,
+      background 0.2s ease;
+  }
+
+  .button:hover {
+    transform: translateY(-2px);
+  }
+
+  .primary {
+    background: #111;
+    color: white;
+  }
+
+  .secondary {
+    border: 1px solid #c7c6bf;
+  }
+
+  .secondary:hover {
+    background: #e6e5df;
+  }
+
+  .hero-card {
+    min-height: 570px;
+    padding: 28px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #111;
+    color: #f5f4ef;
+    border-radius: 4px;
+
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.1);
+
+    transform: rotate(1.5deg);
+    transition: transform 0.35s ease;
+  }
+
+  .hero-card:hover {
+    transform: rotate(0deg) translateY(-8px);
+  }
+
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 10px;
+    letter-spacing: 0.11em;
+  }
+
+  .status {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+
+  .status i {
+    width: 7px;
+    height: 7px;
+
+    background: #9beb71;
+    border-radius: 50%;
+  }
+
+  .card-main {
+    margin: auto 0;
+  }
+
+  .card-main p {
+    margin: 0 0 18px;
+
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    color: #96968e;
+  }
+
+  .card-main h2 {
+    margin: 0;
+
+    font-size: clamp(48px, 5vw, 70px);
+    line-height: 0.94;
+    letter-spacing: -0.065em;
+    font-weight: 500;
+  }
+
+  .card-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+
+    padding-top: 24px;
+    border-top: 1px solid #343430;
+  }
+
+  .card-bottom div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .label {
+    font-size: 9px;
+    letter-spacing: 0.13em;
+    color: #85857e;
+  }
+
+  .card-bottom strong {
+    font-size: 11px;
+    font-weight: 500;
+  }
+
+  .statement {
+    background: #111;
+    color: #f5f4ef;
+
+    padding: 120px max(32px, calc((100vw - 1400px) / 2));
+  }
+
+  .statement p {
+    max-width: 1200px;
+    margin: 0;
+
+    font-size: clamp(45px, 6vw, 90px);
+    line-height: 1;
+    letter-spacing: -0.065em;
+  }
+
+  .statement strong {
+    color: #92928a;
+    font-weight: 500;
+  }
+
+  .work,
+  .about,
+  .contact {
+    width: min(1400px, calc(100% - 64px));
+    margin: auto;
+  }
+
+  .work {
+    padding: 140px 0;
+  }
+
+  .section-heading {
+    display: grid;
+    grid-template-columns: 1fr 0.6fr;
+    gap: 80px;
+
+    margin-bottom: 70px;
+  }
+
+  .section-heading h2,
+  .about h2 {
+    max-width: 800px;
+    margin: 0;
+
+    font-size: clamp(44px, 5vw, 76px);
+    line-height: 1;
+    letter-spacing: -0.06em;
+    font-weight: 500;
+  }
+
+  .section-copy {
+    align-self: end;
+
+    max-width: 480px;
+    margin: 0;
+
+    line-height: 1.7;
+    color: #60605a;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    border-top: 1px solid #c6c5be;
+  }
+
+  .project-card {
+    min-height: 510px;
+    padding: 34px;
+
+    display: flex;
+    flex-direction: column;
+
+    border-bottom: 1px solid #c6c5be;
+
+    transition:
+      background 0.25s ease,
+      color 0.25s ease;
+  }
+
+  .project-card:nth-child(odd) {
+    border-right: 1px solid #c6c5be;
+  }
+
+  .project-card:hover {
+    background: #111;
+    color: #f3f2ee;
+  }
+
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .project-number,
+  .category {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .category {
+    color: #77766f;
+  }
+
+  .project-content {
+    margin: auto 0;
+  }
+
+  .project-content h3 {
+    max-width: 560px;
+    margin: 0 0 24px;
+
+    font-size: clamp(35px, 3.5vw, 55px);
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+    font-weight: 500;
+  }
+
+  .project-content p {
+    max-width: 560px;
+    margin: 0;
+
+    line-height: 1.65;
+    color: #66655f;
+  }
+
+  .project-card:hover .project-content p,
+  .project-card:hover .category {
+    color: #aaa9a1;
+  }
+
+  .stack {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+
+    margin-bottom: 30px;
+  }
+
+  .stack span {
+    padding: 7px 11px;
+
+    border: 1px solid currentColor;
+    border-radius: 999px;
+
+    font-size: 10px;
+  }
+
+  .project-link {
+    font-size: 13px;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 110px;
+
+    padding: 140px 0;
+
+    border-top: 1px solid #c6c5be;
+  }
+
+  .about-copy > p {
+    max-width: 650px;
+    margin: 0 0 30px;
+
+    font-size: 20px;
+    line-height: 1.65;
+    color: #565650;
+  }
+
+  .capabilities {
+    margin-top: 70px;
+
+    border-top: 1px solid #c6c5be;
+  }
+
+  .capabilities div {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #c6c5be;
+  }
+
+  .capabilities span {
+    font-size: 11px;
+    color: #77766f;
+  }
+
+  .capabilities strong {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .contact {
+    padding: 150px 0 100px;
+  }
+
+  .contact h2 {
+    margin: 0;
+
+    font-size: clamp(58px, 8vw, 120px);
+    line-height: 0.92;
+    letter-spacing: -0.075em;
+    font-weight: 500;
+  }
+
+  .contact h2 span {
+    color: #77766f;
+  }
+
+  .contact-links {
+    display: flex;
+    gap: 40px;
+
+    margin-top: 60px;
+  }
+
+  .contact-links a {
+    font-size: 18px;
+    text-underline-offset: 5px;
+  }
+
+  footer {
+    width: min(1400px, calc(100% - 64px));
+    margin: auto;
+    padding: 28px 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-top: 1px solid #c6c5be;
+
+    font-size: 11px;
+    color: #77766f;
+  }
+
+  @media (max-width: 900px) {
+    .navbar {
+      width: calc(100% - 40px);
+    }
+
+    nav {
+      display: none;
+    }
+
+    .navbar {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .hero {
+      width: calc(100% - 40px);
+
+      grid-template-columns: 1fr;
+      gap: 70px;
+
+      padding: 70px 0;
+    }
+
+    .hero-card {
+      min-height: 500px;
+      transform: none;
+    }
+
+    .statement {
+      padding: 90px 20px;
+    }
+
+    .work,
+    .about,
+    .contact {
+      width: calc(100% - 40px);
+    }
+
+    .section-heading,
+    .about {
+      grid-template-columns: 1fr;
+      gap: 50px;
+    }
+
+    .project-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .project-card:nth-child(odd) {
+      border-right: none;
+    }
+
+    .project-card {
+      min-height: 460px;
+      padding: 28px 0;
+    }
+
+    .card-bottom {
+      grid-template-columns: 1fr;
+    }
+
+    .contact-links {
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    footer {
+      width: calc(100% - 40px);
+    }
+  }
+</style>
