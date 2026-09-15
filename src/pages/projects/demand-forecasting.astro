@@ -305,9 +305,25 @@ import { Icon } from "astro-icon/components";
           <h2>Forecast evaluation preview.</h2>
         </div>
 
-        <div class="placeholder">
-          <span>FORECASTING MODEL OUTPUT</span>
-          <p>Visualization will be added here.</p>
+        <div class="forecast-frame">
+          <div class="forecast-label">
+            <span>FIRST VALIDATION EXPERIMENT</span>
+            <span>SEP 1–7 · STORE / POLO</span>
+          </div>
+
+          <img
+            src="/images/forecast-validation-week1.png"
+            alt="Anonymized seven-day demand forecasting validation"
+            loading="lazy"
+          />
+
+          <div class="forecast-note">
+            <strong>18.9% WAPE</strong>
+            <p>
+              First seven-day validation experiment comparing forecasted
+              product demand against observed in-store demand.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -727,25 +743,52 @@ import { Icon } from "astro-icon/components";
     padding: 120px 0 140px;
   }
 
-  .placeholder {
-    min-height: 620px;
-    margin-top: 70px;
-    display: grid;
-    place-content: center;
-    text-align: center;
+  .forecast-frame {
+    width: min(100%, 960px);
+    margin: 70px auto 0;
+    padding: 20px;
     background: #111111;
-    color: #F7F7F5;
+    border-radius: 4px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.12);
   }
 
-  .placeholder span {
-    font-size: 10px;
-    letter-spacing: 0.16em;
+  .forecast-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 2px 18px;
+    font-size: 9px;
+    letter-spacing: 0.14em;
     color: #8A7F6A;
   }
 
-  .placeholder p {
-    margin: 12px 0 0;
-    color: #8c8b84;
+  .forecast-frame img {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 2px;
+  }
+
+  .forecast-note {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 30px;
+    padding: 24px 4px 6px;
+    color: #F7F7F5;
+  }
+
+  .forecast-note strong {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .forecast-note p {
+    max-width: 620px;
+    margin: 0;
+    line-height: 1.6;
+    color: #9b9a93;
   }
 
   .next {
@@ -843,8 +886,18 @@ import { Icon } from "astro-icon/components";
       padding-left: 0;
     }
 
-    .placeholder {
-      min-height: 420px;
+    .forecast-frame {
+      padding: 12px;
+    }
+
+    .forecast-label {
+      gap: 20px;
+      font-size: 8px;
+    }
+
+    .forecast-note {
+      grid-template-columns: 1fr;
+      gap: 10px;
     }
   }
 </style>
