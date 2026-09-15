@@ -1,0 +1,855 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="Operations Management System — Alfonso Palma"
+    />
+    <title>Operations Management System — Alfonso Palma</title>
+  </head>
+
+  <body>
+    <header class="navbar">
+      <a href="/" class="logo">AP.</a>
+      <a href="/" class="back">← Back to portfolio</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="eyebrow">Case Study · Automation & Operations</p>
+
+        <h1>
+          Operations<br />
+          Management <span>System.</span>
+        </h1>
+
+        <div class="hero-grid">
+          <p class="intro">
+            An internal ticketing and incident-management system designed to
+            standardize operational support across multiple restaurant locations.
+          </p>
+
+          <div class="meta">
+            <div>
+              <span>ROLE</span>
+              <strong>Solution Design & Operations</strong>
+            </div>
+
+            <div>
+              <span>FOCUS</span>
+              <strong>Automation · SLA · Support</strong>
+            </div>
+
+            <div>
+              <span>PLATFORM</span>
+              <strong>Microsoft Power Platform</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="impact">
+        <div class="impact-item">
+          <span>01</span>
+          <strong>Centralized</strong>
+          <p>
+            Operational incidents moved from fragmented communication into one structured workflow.
+          </p>
+        </div>
+
+        <div class="impact-item">
+          <span>02</span>
+          <strong>SLA-driven</strong>
+          <p>
+            Resolution targets were defined according to incident priority.
+          </p>
+        </div>
+
+        <div class="impact-item">
+          <span>03</span>
+          <strong>Traceable</strong>
+          <p>
+            Every request could be tracked from creation through final resolution.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="section-label">
+          <span>01</span>
+          <p>The problem</p>
+        </div>
+
+        <div class="section-content">
+          <h2>
+            Operational issues were being managed through
+            <span>fragmented communication.</span>
+          </h2>
+
+          <p>
+            Support requests related to POS systems, networks, hardware,
+            printers, ERP, delivery platforms and user access were handled
+            through different communication channels.
+          </p>
+
+          <p>
+            This made it difficult to consistently identify priorities,
+            assign ownership, measure response times and maintain visibility
+            over unresolved incidents.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section dark">
+        <div class="section-label">
+          <span>02</span>
+          <p>The solution</p>
+        </div>
+
+        <div class="section-content">
+          <h2>
+            A structured workflow from
+            <span>incident to resolution.</span>
+          </h2>
+
+          <p>
+            I designed an internal support system using Microsoft Power Apps,
+            Power Automate and SharePoint to centralize incident reporting and
+            standardize the complete support lifecycle.
+          </p>
+
+          <p>
+            Each ticket receives a unique reference, category, priority,
+            responsible owner and service-level target, creating a traceable
+            operational workflow instead of relying on informal follow-up.
+          </p>
+        </div>
+      </section>
+
+      <section class="workflow">
+        <div class="section-heading">
+          <p class="eyebrow">System workflow</p>
+          <h2>One process. Clear ownership.</h2>
+        </div>
+
+        <div class="workflow-flow">
+          <div class="workflow-card">
+            <span>01</span>
+            <Icon name="simple-icons:powerapps" />
+            <h3>Report</h3>
+            <p>
+              Users register the incident through a structured Power Apps interface.
+            </p>
+          </div>
+
+          <div class="connector">→</div>
+
+          <div class="workflow-card">
+            <span>02</span>
+            <h3>Classify</h3>
+            <p>
+              Category and priority determine how the request should be handled.
+            </p>
+          </div>
+
+          <div class="connector">→</div>
+
+          <div class="workflow-card">
+            <span>03</span>
+            <Icon name="simple-icons:powerautomate" />
+            <h3>Assign</h3>
+            <p>
+              Automated logic routes the incident and triggers the appropriate workflow.
+            </p>
+          </div>
+
+          <div class="connector">→</div>
+
+          <div class="workflow-card">
+            <span>04</span>
+            <Icon name="mdi:microsoft-sharepoint" />
+            <h3>Track & Close</h3>
+            <p>
+              Status, resolution and historical records remain centralized and traceable.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sla">
+        <div class="section-heading">
+          <p class="eyebrow">Service levels</p>
+          <h2>Priority translated into action.</h2>
+        </div>
+
+        <div class="sla-grid">
+          <article>
+            <span>CRITICAL</span>
+            <strong>24 h</strong>
+            <p>
+              High-impact incidents requiring rapid operational response.
+            </p>
+          </article>
+
+          <article>
+            <span>MEDIUM</span>
+            <strong>2 days</strong>
+            <p>
+              Important incidents with controlled operational impact.
+            </p>
+          </article>
+
+          <article>
+            <span>LOW</span>
+            <strong>6 days</strong>
+            <p>
+              Lower-priority requests that can be scheduled within normal operations.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="section-label">
+          <span>03</span>
+          <p>System design</p>
+        </div>
+
+        <div class="section-content">
+          <h2>
+            Built around operational
+            <span>visibility and accountability.</span>
+          </h2>
+
+          <div class="value-grid">
+            <div>
+              <span>01</span>
+              <strong>Unique ticket ID</strong>
+              <p>
+                Every incident can be searched and referenced using a consistent identifier.
+              </p>
+            </div>
+
+            <div>
+              <span>02</span>
+              <strong>Standard categories</strong>
+              <p>
+                POS, network, hardware, printers, ERP, delivery, access and other incidents.
+              </p>
+            </div>
+
+            <div>
+              <span>03</span>
+              <strong>Ownership</strong>
+              <p>
+                Each ticket has a responsible person and a clearly defined status.
+              </p>
+            </div>
+
+            <div>
+              <span>04</span>
+              <strong>Resolution history</strong>
+              <p>
+                Closed incidents remain available for operational traceability and analysis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="technology">
+        <p class="eyebrow">Technology</p>
+
+        <div class="tech-grid">
+          <div>
+            <Icon name="simple-icons:powerapps" />
+            <span>Power Apps</span>
+          </div>
+
+          <div>
+            <Icon name="simple-icons:powerautomate" />
+            <span>Power Automate</span>
+          </div>
+
+          <div>
+            <Icon name="mdi:microsoft-sharepoint" />
+            <span>SharePoint</span>
+          </div>
+
+          <div>
+            <span class="logic">SLA</span>
+            <span>Workflow Logic</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="visual">
+        <div>
+          <p class="eyebrow">System preview</p>
+          <h2>Operational support interface.</h2>
+        </div>
+
+        <div class="system-visual">
+          <img
+            src="/images/operations-management-ui.png"
+            alt="Anonymized operations management system built with Power Apps"
+            loading="lazy"
+          />
+
+          <p class="visual-caption">
+            From structured incident intake to ownership, SLA tracking and final resolution.
+          </p>
+        </div>
+      </section>
+
+      <section class="next">
+        <p>Next case study</p>
+
+        <a href="/">
+          Customer Journey<br />
+          Automation →
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Alfonso Palma</span>
+      <a href="/">Back to portfolio ↑</a>
+    </footer>
+  </body>
+</html>
+
+<style>
+  :global(*) {
+    box-sizing: border-box;
+  }
+
+  :global(html) {
+    scroll-behavior: smooth;
+  }
+
+  :global(body) {
+    margin: 0;
+    background: #F7F7F5;
+    color: #111111;
+    font-family:
+      Inter,
+      ui-sans-serif,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      sans-serif;
+  }
+
+  :global(a) {
+    color: inherit;
+  }
+
+  .navbar,
+  .hero,
+  .impact,
+  .content-section,
+  .workflow,
+  .sla,
+  .technology,
+  .visual,
+  .next,
+  footer {
+    width: min(1400px, calc(100% - 64px));
+    margin-inline: auto;
+  }
+
+  .navbar {
+    height: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d4d3cd;
+  }
+
+  .logo {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.06em;
+    text-decoration: none;
+  }
+
+  .back {
+    font-size: 13px;
+    text-decoration: none;
+  }
+
+  .hero {
+    padding: 110px 0 120px;
+  }
+
+  .eyebrow {
+    margin: 0 0 30px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #6B6B66;
+  }
+
+  .hero h1 {
+    margin: 0;
+    max-width: 1200px;
+    font-size: clamp(66px, 9vw, 145px);
+    line-height: 0.86;
+    letter-spacing: -0.075em;
+    font-weight: 500;
+  }
+
+  .hero h1 span,
+  .section-content h2 span {
+    color: #8A7F6A;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    margin-top: 90px;
+  }
+
+  .intro {
+    max-width: 650px;
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #6B6B66;
+  }
+
+  .meta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .meta div {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding-top: 14px;
+    border-top: 1px solid #d4d3cd;
+  }
+
+  .meta span {
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    color: #6B6B66;
+  }
+
+  .meta strong {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .impact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid #c9c8c1;
+    border-bottom: 1px solid #c9c8c1;
+  }
+
+  .impact-item {
+    padding: 45px 34px;
+  }
+
+  .impact-item + .impact-item {
+    border-left: 1px solid #c9c8c1;
+  }
+
+  .impact-item > span {
+    font-size: 10px;
+    color: #6B6B66;
+  }
+
+  .impact-item strong {
+    display: block;
+    margin: 50px 0 14px;
+    font-size: clamp(34px, 4vw, 58px);
+    letter-spacing: -0.05em;
+    font-weight: 500;
+  }
+
+  .impact-item p {
+    margin: 0;
+    max-width: 360px;
+    line-height: 1.6;
+    color: #6B6B66;
+  }
+
+  .content-section {
+    display: grid;
+    grid-template-columns: 0.35fr 1fr;
+    gap: 100px;
+    padding: 140px 0;
+  }
+
+  .section-label {
+    display: flex;
+    gap: 18px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #6B6B66;
+  }
+
+  .section-label p {
+    margin: 0;
+  }
+
+  .section-content {
+    max-width: 920px;
+  }
+
+  .section-content h2 {
+    margin: 0 0 60px;
+    font-size: clamp(48px, 6vw, 90px);
+    line-height: 0.98;
+    letter-spacing: -0.065em;
+    font-weight: 500;
+  }
+
+  .section-content > p {
+    max-width: 720px;
+    margin: 0 0 28px;
+    font-size: 19px;
+    line-height: 1.7;
+    color: #6B6B66;
+  }
+
+  .dark {
+    width: 100%;
+    max-width: none;
+    padding-inline: max(32px, calc((100vw - 1400px) / 2));
+    background: #111111;
+    color: #F7F7F5;
+  }
+
+  .dark .section-label,
+  .dark .section-content > p {
+    color: #a4a39c;
+  }
+
+  .workflow,
+  .sla {
+    padding: 140px 0;
+  }
+
+  .section-heading h2,
+  .visual h2 {
+    margin: 0;
+    max-width: 1000px;
+    font-size: clamp(48px, 6vw, 90px);
+    line-height: 1;
+    letter-spacing: -0.065em;
+    font-weight: 500;
+  }
+
+  .workflow-flow {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+    gap: 20px;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  .workflow-card {
+    min-height: 310px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #c9c8c1;
+  }
+
+  .workflow-card > span {
+    font-size: 10px;
+    color: #6B6B66;
+  }
+
+  .workflow-card :global(svg) {
+    width: 28px;
+    height: 28px;
+    margin-top: auto;
+  }
+
+  .workflow-card h3 {
+    margin: auto 0 12px;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+  }
+
+  .workflow-card p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #6B6B66;
+  }
+
+  .connector {
+    color: #8A7F6A;
+    font-size: 22px;
+  }
+
+  .sla {
+    border-top: 1px solid #c9c8c1;
+  }
+
+  .sla-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 80px;
+    border-top: 1px solid #c9c8c1;
+    border-bottom: 1px solid #c9c8c1;
+  }
+
+  .sla-grid article {
+    min-height: 340px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sla-grid article + article {
+    border-left: 1px solid #c9c8c1;
+  }
+
+  .sla-grid span {
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    color: #8A7F6A;
+  }
+
+  .sla-grid strong {
+    margin: auto 0 20px;
+    font-size: 64px;
+    line-height: 1;
+    letter-spacing: -0.06em;
+    font-weight: 500;
+  }
+
+  .sla-grid p {
+    max-width: 340px;
+    margin: 0;
+    line-height: 1.6;
+    color: #6B6B66;
+  }
+
+  .value-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 75px;
+    border-top: 1px solid #c9c8c1;
+  }
+
+  .value-grid div {
+    min-height: 220px;
+    padding: 28px 28px 28px 0;
+    border-bottom: 1px solid #c9c8c1;
+  }
+
+  .value-grid div:nth-child(odd) {
+    border-right: 1px solid #c9c8c1;
+  }
+
+  .value-grid div:nth-child(even) {
+    padding-left: 28px;
+  }
+
+  .value-grid span {
+    font-size: 10px;
+    color: #6B6B66;
+  }
+
+  .value-grid strong {
+    display: block;
+    margin: 45px 0 12px;
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .value-grid p {
+    margin: 0;
+    max-width: 390px;
+    line-height: 1.6;
+    color: #6B6B66;
+  }
+
+  .technology {
+    padding: 120px 0;
+    border-top: 1px solid #c9c8c1;
+  }
+
+  .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 50px;
+    border-top: 1px solid #c9c8c1;
+    border-bottom: 1px solid #c9c8c1;
+  }
+
+  .tech-grid > div {
+    min-height: 180px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .tech-grid > div + div {
+    border-left: 1px solid #c9c8c1;
+  }
+
+  .tech-grid :global(svg) {
+    width: 26px;
+    height: 26px;
+  }
+
+  .tech-grid span:last-child {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .logic {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+  }
+
+  .visual {
+    padding: 120px 0 140px;
+  }
+
+  .system-visual {
+    width: min(100%, 1180px);
+    margin: 70px auto 0;
+  }
+
+  .system-visual img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #d4d3cd;
+    border-radius: 4px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.08);
+  }
+
+  .visual-caption {
+    max-width: 620px;
+    margin: 20px 0 0;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #6B6B66;
+  }
+
+  .next {
+    padding: 120px 0;
+    border-top: 1px solid #c9c8c1;
+  }
+
+  .next p {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #6B6B66;
+  }
+
+  .next a {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: clamp(45px, 6vw, 88px);
+    line-height: 0.98;
+    letter-spacing: -0.06em;
+    text-decoration: none;
+  }
+
+  footer {
+    padding: 28px 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #c9c8c1;
+    font-size: 11px;
+    color: #6B6B66;
+  }
+
+  footer a {
+    text-decoration: none;
+  }
+
+  @media (max-width: 900px) {
+    .navbar,
+    .hero,
+    .impact,
+    .content-section,
+    .workflow,
+    .sla,
+    .technology,
+    .visual,
+    .next,
+    footer {
+      width: calc(100% - 40px);
+    }
+
+    .hero {
+      padding: 80px 0;
+    }
+
+    .hero-grid,
+    .content-section {
+      grid-template-columns: 1fr;
+      gap: 55px;
+    }
+
+    .meta,
+    .impact,
+    .sla-grid,
+    .tech-grid,
+    .value-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .impact-item + .impact-item,
+    .sla-grid article + article,
+    .tech-grid > div + div {
+      border-left: none;
+      border-top: 1px solid #c9c8c1;
+    }
+
+    .workflow-flow {
+      grid-template-columns: 1fr;
+    }
+
+    .connector {
+      transform: rotate(90deg);
+      justify-self: center;
+    }
+
+    .dark {
+      width: 100%;
+      padding-inline: 20px;
+    }
+
+    .value-grid div:nth-child(odd) {
+      border-right: none;
+    }
+
+    .value-grid div:nth-child(even) {
+      padding-left: 0;
+    }
+
+    .system-visual {
+      width: 100%;
+    }
+  }
+</style>
